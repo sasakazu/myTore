@@ -10,6 +10,7 @@ import UIKit
 
 class simpleListController: UITableViewController {
     
+//    トレーニングネーム
     var showedArray = [String]()
     var selectedText: String?
 
@@ -21,7 +22,7 @@ class simpleListController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+         self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
 
     
@@ -37,13 +38,14 @@ class simpleListController: UITableViewController {
         tableView.reloadData()
     }
     
+    
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if UserDefaults.standard.object(forKey: "elementsOfArray") != nil {
             
             selectedText = UserDefaults.standard.object(forKey: "elementsOfArray") as? String
             
-            // 8. SecondViewControllerに渡す文字列をセット
             selectedText = showedArray[indexPath.row]
 
             
@@ -52,9 +54,20 @@ class simpleListController: UITableViewController {
             
         }
         
+    
+        
         
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showSecondView") {
+            let vc2: detailViewController = (segue.destination as? detailViewController)!
+            // ViewControllerのtextVC2にメッセージを設定
+            vc2.text = selectedText!
+          
+        }
+    }
     
   
     
@@ -148,13 +161,7 @@ class simpleListController: UITableViewController {
     }
     */
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "showSecondView") {
-            let vc2: detailViewController = (segue.destination as? detailViewController)!
-            // ViewControllerのtextVC2にメッセージを設定
-            vc2.text = selectedText!
-        }
-    }
+ 
 
 }
 

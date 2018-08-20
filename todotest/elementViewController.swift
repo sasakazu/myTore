@@ -10,9 +10,11 @@ import UIKit
 
 class elementViewController: UIViewController {
     
-     var elements = [String]()
+    var elements = [String]()
+    var oneSetKG = [String]()
 
     @IBOutlet weak var textElement: UITextField!
+    @IBOutlet weak var firstKG: UITextField!
     
     
     override func viewDidLoad() {
@@ -23,22 +25,21 @@ class elementViewController: UIViewController {
     
     
     @IBAction func registerElement(_ sender: Any) {
-        //以前に登録していたelementsを読み出す
+       
         if UserDefaults.standard.object(forKey: "elementsOfArray") != nil {
             
             elements = UserDefaults.standard.object(forKey: "elementsOfArray") as! [String]
         
         }
         
-        
-        //Add element to elementsArray
         elements.append(textElement.text!)
-        
-        //App内にelementsデータを保存
+
         UserDefaults.standard.set(elements, forKey: "elementsOfArray")
         
-        //状態を保持して戻る
+        
         self.navigationController?.popViewController(animated: true)
+        
+        
     }
 
     

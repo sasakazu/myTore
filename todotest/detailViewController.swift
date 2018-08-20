@@ -11,13 +11,17 @@ import UIKit
 class detailViewController: UIViewController {
     
     var text = ""
+    var oneKGLabel = ""
+    
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var oneSetKGLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         label.text = text
+        oneSetKGLabel.text = oneKGLabel
    
     }
 

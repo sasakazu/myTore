@@ -16,8 +16,8 @@
 		734220342128300D00F1B782 /* elementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734220332128300D00F1B782 /* elementViewController.swift */; };
 		734220362128339D00F1B782 /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734220352128339D00F1B782 /* detailViewController.swift */; };
 		7350C4C32133E95D00736AC5 /* intervalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7350C4C22133E95D00736AC5 /* intervalViewController.swift */; };
-		7350C4C62133EC0A00736AC5 /* アンケート用紙のアイコン素材.png in Resources */ = {isa = PBXBuildFile; fileRef = 7350C4C52133EC0A00736AC5 /* アンケート用紙のアイコン素材.png */; };
-		7350C4C82133EC4F00736AC5 /* ストップウォッチの無料アイコン.png in Resources */ = {isa = PBXBuildFile; fileRef = 7350C4C72133EC4F00736AC5 /* ストップウォッチの無料アイコン.png */; };
+		7350C4C62133EC0A00736AC5 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 7350C4C52133EC0A00736AC5 /* list.png */; };
+		7350C4C82133EC4F00736AC5 /* stopWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 7350C4C72133EC4F00736AC5 /* stopWatch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,8 @@
 		734220332128300D00F1B782 /* elementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elementViewController.swift; sourceTree = "<group>"; };
 		734220352128339D00F1B782 /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
 		7350C4C22133E95D00736AC5 /* intervalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervalViewController.swift; sourceTree = "<group>"; };
-		7350C4C52133EC0A00736AC5 /* アンケート用紙のアイコン素材.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "アンケート用紙のアイコン素材.png"; sourceTree = "<group>"; };
-		7350C4C72133EC4F00736AC5 /* ストップウォッチの無料アイコン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ストップウォッチの無料アイコン.png"; sourceTree = "<group>"; };
+		7350C4C52133EC0A00736AC5 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		7350C4C72133EC4F00736AC5 /* stopWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopWatch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +71,9 @@
 				7342202321282ECB00F1B782 /* Main.storyboard */,
 				7350C4C22133E95D00736AC5 /* intervalViewController.swift */,
 				734220352128339D00F1B782 /* detailViewController.swift */,
-				7350C4C42133EBF900736AC5 /* icon */,
-				734220332128300D00F1B782 /* elementViewController.swift */,
 				7342203121282F2900F1B782 /* simpleListController.swift */,
+				734220332128300D00F1B782 /* elementViewController.swift */,
+				7350C4C42133EBF900736AC5 /* icon */,
 				7342202621282ECD00F1B782 /* Assets.xcassets */,
 				7342202821282ECD00F1B782 /* LaunchScreen.storyboard */,
 				7342202B21282ECD00F1B782 /* Info.plist */,
@@ -84,8 +84,8 @@
 		7350C4C42133EBF900736AC5 /* icon */ = {
 			isa = PBXGroup;
 			children = (
-				7350C4C72133EC4F00736AC5 /* ストップウォッチの無料アイコン.png */,
-				7350C4C52133EC0A00736AC5 /* アンケート用紙のアイコン素材.png */,
+				7350C4C72133EC4F00736AC5 /* stopWatch.png */,
+				7350C4C52133EC0A00736AC5 /* list.png */,
 			);
 			path = icon;
 			sourceTree = "<group>";
@@ -149,9 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7342202A21282ECD00F1B782 /* LaunchScreen.storyboard in Resources */,
-				7350C4C82133EC4F00736AC5 /* ストップウォッチの無料アイコン.png in Resources */,
+				7350C4C82133EC4F00736AC5 /* stopWatch.png in Resources */,
 				7342202721282ECD00F1B782 /* Assets.xcassets in Resources */,
-				7350C4C62133EC0A00736AC5 /* アンケート用紙のアイコン素材.png in Resources */,
+				7350C4C62133EC0A00736AC5 /* list.png in Resources */,
 				7342202521282ECB00F1B782 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,6 @@ import UIKit
 
 class simpleListController: UITableViewController {
     
-//    トレーニングネーム
     var showedArray = [String]()
     var selectedText: String?
 
@@ -19,7 +18,8 @@ class simpleListController: UITableViewController {
         super.viewDidLoad()
 
         self.navigationItem.leftBarButtonItem = self.editButtonItem
-    
+        
+       
     }
 
     
@@ -88,7 +88,6 @@ class simpleListController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "elementTodo", for: indexPath)
         
-        // Configure the cell...
         cell.textLabel?.text = showedArray[indexPath.row]
         
         return cell
@@ -106,9 +105,22 @@ class simpleListController: UITableViewController {
            
             tableView.reloadData()
             
-        } else if editingStyle == .insert {
+        }
+        else if editingStyle == .insert {
            
         }
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        
+        
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        tableView.isEditing = editing
+        
     }
     
     
